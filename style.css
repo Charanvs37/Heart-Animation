@@ -1,13 +1,14 @@
 body {
   margin: 0;
   overflow: hidden;
+  animation: screenPulse 2s infinite ease-in-out;
 }
 
-.controls {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+/* Background heartbeat effect */
+@keyframes screenPulse {
+  0% { background-color: black; }
+  50% { background-color: #1a0010; }
+  100% { background-color: black; }
 }
 
 canvas {
@@ -15,6 +16,5 @@ canvas {
 }
 
 svg {
-  position: absolute;
   display: none;
 }
